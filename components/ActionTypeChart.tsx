@@ -62,8 +62,8 @@ export default function ActionTypeChart({ data }: ActionTypeChartProps) {
         colors: '#E6EDF3',
       },
       markers: {
-        width: 12,
-        height: 12,
+        size: 12,
+
       },
     },
     plotOptions: {
