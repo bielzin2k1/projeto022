@@ -1,0 +1,160 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                 🚀 FIVEM FACTION PANEL - COMANDO TÁTICO 🚀                  ║
+║                                                                              ║
+║                          Painel Futurista v1.0.0                            ║
+║                        🔥 AGORA COM SUPABASE! 🔥                            ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📋 PASSO A PASSO PARA INICIAR:
+
+1️⃣  CRIAR PROJETO NO SUPABASE
+   └─ Acesse: https://supabase.com/dashboard
+   └─ Clique em "New Project"
+   └─ Anote a senha do database!
+   └─ Aguarde 1-2 minutos
+
+2️⃣  COPIAR CONNECTION STRING
+   └─ Settings → Database → Connection String
+   └─ Copie a URI e substitua [YOUR-PASSWORD] pela sua senha
+   └─ Exemplo: postgresql://postgres:senha123@db.xxxx.supabase.co:5432/postgres
+
+3️⃣  INSTALAR DEPENDÊNCIAS
+   └─ Comando: npm install
+   └─ Tempo estimado: 2-3 minutos
+
+4️⃣  CONFIGURAR AMBIENTE
+   └─ Criar arquivo: .env
+   └─ Cole:
+      
+      DATABASE_URL="postgresql://postgres:SUA_SENHA@db.xxxx.supabase.co:5432/postgres"
+      JWT_SECRET=minha_chave_secreta_123
+      PORT=5000
+      NEXT_PUBLIC_API_URL=http://localhost:5000
+
+5️⃣  GERAR PRISMA E CRIAR TABELAS
+   └─ Comando: npm run prisma:generate
+   └─ Comando: npm run prisma:push
+   └─ Aguarde confirmação de sucesso
+
+6️⃣  POPULAR DATABASE (OPCIONAL - DADOS DE TESTE)
+   └─ Comando: npm run seed
+   └─ Cria: 5 usuários + 30 ações de exemplo
+
+7️⃣  INICIAR APLICAÇÃO
+   └─ Comando: npm run dev
+   └─ Frontend: http://localhost:3000
+   └─ Backend:  http://localhost:5000
+
+8️⃣  FAZER LOGIN
+   └─ Acesse: http://localhost:3000
+   
+   👑 LÍDER (Acesso Total):
+      Email: admin@facao.com
+      Senha: senha123
+   
+   👔 GERENTE (Criar/Ver):
+      Email: gerente1@facao.com
+      Senha: senha123
+   
+   👤 MEMBRO (Apenas Ver):
+      Email: operador1@facao.com
+      Senha: senha123
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTAÇÃO:
+
+   SUPABASE_SETUP.md  - Guia COMPLETO de configuração do Supabase
+   README.md          - Visão geral do projeto
+   QUICKSTART.md      - Início rápido em 5 minutos
+   FEATURES.md        - Lista completa de funcionalidades
+   MIGRATION_GUIDE.md - Se você estava usando MongoDB
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 COMANDOS PRINCIPAIS:
+
+   npm run dev              Inicia tudo (Frontend + Backend)
+   npm run dev:frontend     Apenas Next.js (porta 3000)
+   npm run dev:backend      Apenas Express API (porta 5000)
+   npm run seed            Popula database com dados teste
+   npm run prisma:generate  Gera Prisma Client
+   npm run prisma:push     Sincroniza schema com Supabase
+   npm run prisma:studio   Abre interface visual do database
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎨 RECURSOS PRINCIPAIS:
+
+   ✅ Dashboard com estatísticas em tempo real
+   ✅ Sistema de registro de ações (Pequeno/Médio/Grande Porte)
+   ✅ 24 ações pré-definidas
+   ✅ Gráficos dinâmicos e interativos
+   ✅ Gerenciamento de membros com ranking
+   ✅ Sistema de reputação (XP)
+   ✅ Estatísticas e relatórios avançados
+   ✅ 3 níveis de acesso (Líder/Gerente/Membro)
+   ✅ Design futurista com animações neon
+   ✅ Totalmente responsivo (Desktop/Tablet/Mobile)
+   ✅ 🔥 SUPABASE (PostgreSQL na nuvem) 🔥
+   ✅ 🔥 Não precisa instalar database local! 🔥
+
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ PROBLEMAS COMUNS:
+
+   ❌ Erro de conexão com Supabase?
+      → Verifique DATABASE_URL no .env
+      → Confirme que substituiu [YOUR-PASSWORD] pela senha real
+      → Teste: npm run prisma:studio
+   
+   ❌ Tabelas não foram criadas?
+      → Execute: npm run prisma:push
+   
+   ❌ Prisma Client não encontrado?
+      → Execute: npm run prisma:generate
+   
+   ❌ Porta ocupada?
+      → Altere PORT no .env para 5001 ou outra porta
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 STACK TECNOLÓGICO:
+
+   Frontend:  Next.js 14 + TypeScript + TailwindCSS + Framer Motion
+   Backend:   Node.js + Express + Prisma ORM
+   Database:  Supabase (PostgreSQL)
+   Charts:    ApexCharts
+   State:     Zustand
+   UI:        Lucide Icons + React Hot Toast
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🌟 VANTAGENS DO SUPABASE:
+
+   ✨ Database na nuvem (não precisa instalar nada)
+   ✨ Backups automáticos diários
+   ✨ Interface visual no dashboard
+   ✨ 500MB grátis (suficiente para facções)
+   ✨ Melhor performance que MongoDB local
+   ✨ Escalabilidade automática
+   ✨ Acesso de qualquer lugar
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 SUPORTE:
+
+   Consulte SUPABASE_SETUP.md para guia detalhado
+   Todas as funcionalidades estão 100% implementadas e funcionais!
+   
+   Supabase Dashboard: https://supabase.com/dashboard
+   Prisma Docs: https://prisma.io/docs
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                       ⚡ BOA SORTE, COMANDANTE! ⚡
+              Sistema Tático Operacional com Supabase na Nuvem!
+
+╚══════════════════════════════════════════════════════════════════════════════╝
